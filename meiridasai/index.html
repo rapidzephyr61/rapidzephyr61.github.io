@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日大赛91-每日大赛91热点榜单_每日大赛91吃瓜爆料合集</title>
+<meta name="description" content="每日大赛91热点内容首页，汇集每日大赛91的榜单速览、热门话题与吃瓜爆料合集，按更新时间呈现当日关注要点，并提供浏览与筛选入口。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141a2b'/%3E%3Cpath d='M20 18h24l-4 12h-16z' fill='%23ff6b3d'/%3E%3Ccircle cx='26' cy='44' r='6' fill='%23ffd166'/%3E%3Ccircle cx='42' cy='44' r='6' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0e1220;
+  --bg-soft:#151b2e;
+  --card:#1a2136;
+  --line:#2a3452;
+  --text:#eef1f8;
+  --muted:#9aa6c4;
+  --accent:#ff6b3d;
+  --accent-2:#ffd166;
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:radial-gradient(circle at 15% -10%,#222c4d 0%,transparent 45%),radial-gradient(circle at 90% 0%,#3a2030 0%,transparent 40%),var(--bg);
+  color:var(--text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+header.site{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(14px);
+  background:rgba(14,18,32,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px}
+.brand svg{flex:none}
+nav.main ul{display:flex;gap:22px;list-style:none;font-size:14.5px;color:var(--muted)}
+nav.main a{padding:4px 0;border-bottom:2px solid transparent;transition:.2s}
+nav.main a:hover{color:var(--text);border-color:var(--accent)}
+.nav-cta{
+  font-size:14px;padding:8px 16px;border-radius:999px;
+  background:linear-gradient(120deg,var(--accent),#ff9361);
+  color:#1a0f08;font-weight:700;white-space:nowrap;
+}
+.hero{padding:64px 0 48px;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.tag{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;color:var(--accent-2);
+  border:1px solid rgba(255,209,102,.35);
+  background:rgba(255,209,102,.07);
+  padding:5px 12px;border-radius:999px;margin-bottom:18px;
+}
+h1{font-size:clamp(30px,4.4vw,50px);line-height:1.2;font-weight:900;letter-spacing:1px}
+h1 span{color:var(--accent)}
+.hero p.lead{margin-top:18px;color:var(--muted);font-size:16.5px;max-width:34em}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;border-radius:12px;font-weight:700;font-size:15px;
+  transition:.2s;
+}
+.btn-primary{background:linear-gradient(120deg,var(--accent),#ff9361);color:#1a0f08}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:var(--accent)}
+.hero-visual{
+  position:relative;border-radius:24px;overflow:hidden;
+  border:1px solid var(--line);
+  background:linear-gradient(160deg,#1e2740,#141a2b 60%);
+  padding:26px;
+}
+.board{display:grid;gap:10px}
+.board-row{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.035);border-radius:12px;padding:10px 14px}
+.board-row .rank{font-size:13px;font-weight:800;color:var(--accent-2);width:22px}
+.board-row .bar{flex:1;height:7px;border-radius:99px;background:#2a3452;overflow:hidden}
+.board-row .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--accent-2))}
+.board-row .val{font-size:12.5px;color:var(--muted)}
+section{padding:52px 0}
+.sec-head{margin-bottom:30px}
+.sec-head h2{font-size:clamp(22px,2.6vw,29px);font-weight:800;letter-spacing:.5px}
+.sec-head p{color:var(--muted);margin-top:8px;font-size:15px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;transition:.22s;
+}
+.card:hover{border-color:rgba(255,107,61,.55);transform:translateY(-3px)}
+.card .kicker{font-size:12.5px;color:var(--accent-2);letter-spacing:1px;margin-bottom:10px}
+.card h3{font-size:18px;font-weight:800;margin-bottom:10px}
+.card p{color:var(--muted);font-size:14.5px}
+.list{display:grid;gap:14px}
+.item{
+  display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:start;
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:20px 22px;
+}
+.item .no{font-size:22px;font-weight:900;color:var(--accent);line-height:1.2;min-width:38px}
+.item h4{font-size:16.5px;font-weight:800;margin-bottom:6px}
+.item p{color:var(--muted);font-size:14.5px}
+.item .time{font-size:12.5px;color:var(--muted);white-space:nowrap;padding-top:3px}
+.filter-bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.chip{
+  border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--muted);
+  font-size:13.5px;padding:7px 16px;border-radius:999px;cursor:pointer;transition:.2s;
+  font-family:inherit;
+}
+.chip:hover{color:var(--text)}
+.chip.active{background:linear-gradient(120deg,var(--accent),#ff9361);color:#1a0f08;border-color:transparent;font-weight:700}
+.hidden{display:none}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.article-box{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.article-box h3{font-size:19px;font-weight:800;margin-bottom:14px}
+.article-box p{color:var(--muted);font-size:15px;margin-bottom:12px}
+.article-box p:last-child{margin-bottom:0}
+.dl-box{
+  background:linear-gradient(150deg,#20283f,#151b2e);
+  border:1px solid var(--line);border-radius:var(--radius);padding:30px;
+}
+.dl-box h3{font-size:19px;font-weight:800;margin-bottom:12px}
+.dl-box p{color:var(--muted);font-size:15px;margin-bottom:22px}
+.dl-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  background:linear-gradient(120deg,var(--accent),#ff9361);color:#1a0f08;
+  padding:13px 28px;border-radius:12px;font-weight:800;font-size:15px;
+  pointer-events:none;opacity:.9;
+}
+.dl-note{margin-top:14px;font-size:12.5px;color:var(--muted)}
+footer{
+  border-top:1px solid var(--line);margin-top:30px;padding:38px 0 30px;
+  color:var(--muted);font-size:13.5px;
+}
+.foot-inner{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.foot-brand{font-weight:800;color:var(--text);font-size:16px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap}
+.foot-links a:hover{color:var(--accent)}
+.copy{margin-top:24px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:#6f7b99}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;padding:44px 0 34px;gap:30px}
+  .grid-3{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+  nav.main{display:none}
+  .item{grid-template-columns:auto 1fr;gap:12px}
+  .item .time{grid-column:2;padding-top:0}
+}
+@media(max-width:520px){
+  .hero-actions .btn{width:100%;justify-content:center}
+  .nav-inner{padding:12px 0}
+  .brand{font-size:17px}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1a2136"/><path d="M20 18h24l-4 12h-16z" fill="#ff6b3d"/><circle cx="26" cy="44" r="6" fill="#ffd166"/><circle cx="42" cy="44" r="6" fill="#ffd166"/></svg>
+      每日大赛91
+    </a>
+    <nav class="main" aria-label="主导航">
+      <ul>
+        <li><a href="#hot">今日热点</a></li>
+        <li><a href="#rank">榜单速览</a></li>
+        <li><a href="#feed">爆料合集</a></li>
+        <li><a href="#about">关于本站</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="#feed">看今日合集</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <span class="tag">● 当日热点 持续更新</span>
+      <h1>每日大赛91</h1>
+      <p class="lead">每日大赛91 是一个围绕当日热点内容组织的信息首页：把散落在各处的话题、爆料与讨论要点收拢成榜单与合集，让访问者用更短的时间看清今天在讨论什么、哪些条目值得点开细看。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#hot">浏览今日热点 →</a>
+        <a class="btn btn-ghost" href="#rank">查看榜单速览</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="board">
+        <div class="board-row"><span class="rank">01</span><span class="bar"><i style="width:92%"></i></span><span class="val">热度 92</span></div>
+        <div class="board-row"><span class="rank">02</span><span class="bar"><i style="width:81%"></i></span><span class="val">热度 81</span></div>
+        <div class="board-row"><span class="rank">03</span><span class="bar"><i style="width:74%"></i></span><span class="val">热度 74</span></div>
+        <div class="board-row"><span class="rank">04</span><span class="bar"><i style="width:63%"></i></span><span class="val">热度 63</span></div>
+        <div class="board-row"><span class="rank">05</span><span class="bar"><i style="width:57%"></i></span><span class="val">热度 57</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="hot">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>今日热点</h2>
+        <p>按讨论密度排列的当日条目，每条给出话题方向与关注要点，点击可展开合集内的相关记录。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="kicker">话题 · 讨论升温</div>
+          <h3>榜单刷新节奏</h3>
+          <p>每日大赛91 的榜单以固定时段刷新，条目顺序随讨论量变化。理解刷新节奏，比记住某一时刻的排名更有用。</p>
+        </article>
+        <article class="card">
+          <div class="kicker">爆料 · 多方说法</div>
+          <h3>爆料条目交叉核对</h3>
+          <p>同一事件常出现多种表述。合集把不同来源的说法并排放置，标注出现时间，方便读者自行判断可信度。</p>
+        </article>
+        <article class="card">
+          <div class="kicker">吃瓜 · 围观入口</div>
+          <h3>围观者的阅读路径</h3>
+          <p>从榜单进入、在合集里看细节、再回到话题页看后续，这条路径构成了每日大赛91 最常见的使用方式。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>榜单速览</h2>
+        <p>下方条目按当日热度整理，热度值反映讨论密度而非事实认定，仅供浏览排序参考。</p>
+      </div>
+      <div class="list">
+        <div class="item">
+          <div class="no">01</div>
+          <div>
+            <h4>当日榜首话题的来龙去脉</h4>
+            <p>从最早的一条讨论起，梳理话题如何从零星提及扩散为榜单第一，并标出几个关键转折时间点。</p>
+          </div>
+          <div class="time">今日 09:20</div>
+        </div>
+        <div class="item">
+          <div class="no">02</div>
+          <div>
+            <h4>爆料合集的更新与撤回</h4>
+            <p>部分爆料在后续被补充或撤回。合集保留更新记录，让读者看到信息变化的过程，而不只看到最终版本。</p>
+          </div>
+          <div class="time">今日 10:45</div>
+        </div>
+        <div class="item">
+          <div class="no">03</div>
+          <div>
+            <h4>争议条目的不同立场</h4>
+            <p>同一事件下存在明显分歧的说法，合集按立场分组呈现，不做单方面结论，读者可对照阅读。</p>
+          </div>
+          <div class="time">今日 12:10</div>
+        </div>
+        <div class="item">
+          <div class="no">04</div>
+          <div>
+            <h4>热度回落后的二次讨论</h4>
+            <p>部分条目在热度回落后因新证据再次被提起，这类二次讨论往往比首轮更有信息量。</p>
+          </div>
+          <div class="time">今日 14:30</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feed">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>爆料合集</h2>
+        <p>按类别筛选合集条目。筛选在页面内即时生效，帮助快速定位想看的方向。</p>
+      </div>
+      <div class="filter-bar" role="group" aria-label="合集分类筛选">
+        <button class="chip active" data-filter="all" type="button">全部</button>
+        <button class="chip" data-filter="talk" type="button">话题讨论</button>
+        <button class="chip" data-filter="leak" type="button">爆料记录</button>
+        <button class="chip" data-filter="watch" type="button">围观视角</button>
+      </div>
+      <div class="list" id="feedList">
+        <div class="item" data-cat="talk">
+          <div class="no">A</div>
+          <div>
+            <h4>话题讨论：为什么这条会冲上榜首</h4>
+            <p>讨论集中在三个方向：事件本身的细节、相关方的回应、以及围观者的二次解读。合集把三类内容分开归档。</p>
+          </div>
+          <div class="time">话题</div>
+        </div>
+        <div class="item" data-cat="leak">
+          <div class="no">B</div>
+          <div>
+            <h4>爆料记录：来源与时间线</h4>
+            <p>每条爆料标注首次出现时间与后续更新状态，已撤回的条目保留说明，避免读者被旧版本误导。</p>
+          </div>
+          <div class="time">爆料</div>
+        </div>
+        <div class="item" data-cat="watch">
+          <div class="no">C</div>
+          <div>
+            <h4>围观视角：评论区里的高频疑问</h4>
+            <p>把评论区反复出现的疑问汇总成条目，并附上已公开的信息，减少重复提问与信息误传。</p>
+          </div>
+          <div class="time">围观</div>
+        </div>
+        <div class="item" data-cat="talk">
+          <div class="no">D</div>
+          <div>
+            <h4>话题讨论：热度与事实的区分</h4>
+            <p>热度高不等于信息可靠。合集在每条旁标注来源数量与更新次数，读者可据此判断信息成熟度。</p>
+          </div>
+          <div class="time">话题</div>
+        </div>
+        <div class="item" data-cat="leak">
+          <div class="no">E</div>
+          <div>
+            <h4>爆料记录：被补充的细节</h4>
+            <p>部分条目在原爆料基础上出现补充材料，合集以追加记录方式保留，不覆盖原始版本。</p>
+          </div>
+          <div class="time">爆料</div>
+        </div>
+        <div class="item" data-cat="watch">
+          <div class="no">F</div>
+          <div>
+            <h4>围观视角：如何高效看完一个合集</h4>
+            <p>先看时间线，再看争议点，最后看更新记录，是多数读者在每日大赛91 里形成的阅读顺序。</p>
+          </div>
+          <div class="time">围观</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>关于本站</h2>
+        <p>说明每日大赛91 的内容定位、整理方式与使用边界。</p>
+      </div>
+      <div class="split">
+        <div class="article-box">
+          <h3>内容定位与整理方式</h3>
+          <p>每日大赛91 面向关注当日热点与爆料内容的访问者，把分散的讨论收拢为可浏览的榜单与合集。页面不生产爆料，只对已公开的讨论做归类和标注。</p>
+          <p>整理时优先保留时间线：一条条目从首次出现、被补充、被质疑到被撤回，各阶段都留痕。这样读者看到的是信息演变过程，而非某个截断的结论。</p>
+          <p>热度数值用于排序参考，不代表事实认定。涉及具体人物的说法，均以来源可查的公开表述为准，未证实的部分会明确标注为待确认。</p>
+        </div>
+        <div class="dl-box">
+          <h3>合集存档下载</h3>
+          <p>当日合集整理完成后可打包存档，便于离线查看时间线与更新记录。存档与页面内容保持一致，不含额外推断。</p>
+          <a class="dl-btn" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16" stroke="#1a0f08" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            下载
+          </a>
+          <p class="dl-note">存档包按日更新，内容以页面显示为准。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand">
+          <svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1a2136"/><path d="M20 18h24l-4 12h-16z" fill="#ff6b3d"/><circle cx="26" cy="44" r="6" fill="#ffd166"/><circle cx="42" cy="44" r="6" fill="#ffd166"/></svg>
+          每日大赛91
+        </div>
+        <p>当日热点、榜单与爆料合集的浏览入口。</p>
+      </div>
+      <div class="foot-links">
+        <a href="#hot">今日热点</a>
+        <a href="#rank">榜单速览</a>
+        <a href="#feed">爆料合集</a>
+        <a href="#about">关于本站</a>
+      </div>
+    </div>
+    <div class="copy">每日大赛91 · 内容按公开讨论整理，热度数值仅用于排序参考，不构成事实认定。</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var chips=document.querySelectorAll('.chip');
+  var items=document.querySelectorAll('#feedList .item');
+  chips.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      chips.forEach(function(b){b.classList.remove('active')});
+      btn.classList.add('active');
+      var f=btn.getAttribute('data-filter');
+      items.forEach(function(it){
+        if(f==='all'||it.getAttribute('data-cat')===f){
+          it.classList.remove('hidden');
+        }else{
+          it.classList.add('hidden');
+        }
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
