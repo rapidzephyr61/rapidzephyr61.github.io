@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>桃花91-桃花91热门内容_桃花91热点合集</title>
+<meta name="description" content="桃花91主题首页，汇集桃花91的热门内容、热点合集与精选条目，提供清晰的浏览入口与内容分区，帮助访客快速了解桃花91当下可看的内容。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f7d9e3'/%3E%3Cg fill='%23e0608e'%3E%3Ccircle cx='32' cy='18' r='8'/%3E%3Ccircle cx='18' cy='32' r='8'/%3E%3Ccircle cx='46' cy='32' r='8'/%3E%3Ccircle cx='32' cy='46' r='8'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='6' fill='%23fff3c4'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#2b2028;
+  --ink-soft:#5c4a55;
+  --rose:#d95c8a;
+  --rose-deep:#a83c66;
+  --rose-pale:#fbe8ef;
+  --cream:#fffaf7;
+  --line:#f0dde4;
+  --gold:#c9973f;
+  --shadow:0 10px 30px rgba(168,60,102,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:var(--rose-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+
+/* header */
+header.site{
+  position:sticky;top:0;z-index:40;
+  background:rgba(255,250,247,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.hbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.22rem;letter-spacing:.02em;color:var(--rose-deep)}
+.logo:hover{text-decoration:none}
+.logo .mark{width:36px;height:36px;flex:0 0 auto}
+nav.main ul{display:flex;gap:26px;list-style:none;font-size:.95rem}
+nav.main a{color:var(--ink-soft);font-weight:500}
+nav.main a:hover{color:var(--rose-deep);text-decoration:none}
+.nav-cta{
+  display:inline-block;padding:8px 18px;border-radius:999px;
+  background:var(--rose);color:#fff;font-size:.9rem;font-weight:600;
+}
+.nav-cta:hover{background:var(--rose-deep);text-decoration:none;color:#fff}
+.menu-toggle{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:6px 10px;color:var(--ink-soft);font-size:.9rem}
+
+/* hero */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 82% -10%,#ffe3ee 0%,transparent 60%),
+    radial-gradient(700px 380px at 4% 110%,#fff2d6 0%,transparent 62%),
+    linear-gradient(180deg,#fffaf7 0%,#fdf1f5 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:64px 0 70px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.8rem;letter-spacing:.14em;color:var(--rose-deep);
+  background:var(--rose-pale);border:1px solid #f5cdda;
+  padding:5px 14px;border-radius:999px;margin-bottom:20px;font-weight:600;
+}
+.hero h1{
+  font-size:clamp(2.3rem,5vw,3.5rem);
+  line-height:1.18;letter-spacing:.01em;font-weight:800;
+  color:var(--ink);
+}
+.hero h1 .petal{color:var(--rose)}
+.hero p.lead{margin-top:20px;font-size:1.05rem;color:var(--ink-soft);max-width:34em}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn{
+  display:inline-block;padding:12px 26px;border-radius:999px;font-weight:600;font-size:.98rem;
+  border:1px solid transparent;transition:.2s;
+}
+.btn-primary{background:var(--rose);color:#fff;box-shadow:0 8px 20px rgba(217,92,138,.28)}
+.btn-primary:hover{background:var(--rose-deep);text-decoration:none;color:#fff}
+.btn-ghost{background:#fff;border-color:var(--line);color:var(--rose-deep)}
+.btn-ghost:hover{border-color:#f0bfd0;text-decoration:none;background:#fff8fb}
+.hero-facts{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap}
+.fact b{display:block;font-size:1.3rem;color:var(--rose-deep);line-height:1.2}
+.fact span{font-size:.85rem;color:var(--ink-soft)}
+.hero-art{position:relative}
+.hero-art .card{
+  background:#fff;border:1px solid var(--line);border-radius:22px;
+  padding:22px;box-shadow:var(--shadow);
+}
+.hero-art .card h3{font-size:.95rem;color:var(--rose-deep);margin-bottom:14px;letter-spacing:.04em}
+.hero-art .card ul{list-style:none;display:grid;gap:12px}
+.hero-art .card li{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;color:var(--ink-soft)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--rose);margin-top:.55em;flex:0 0 auto}
+
+/* sections */
+section.block{padding:66px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(1.45rem,2.6vw,1.9rem);font-weight:800;letter-spacing:.01em}
+.sec-head h2::after{content:"";display:block;width:44px;height:3px;border-radius:3px;background:var(--rose);margin-top:12px}
+.sec-head p{color:var(--ink-soft);font-size:.95rem;max-width:34em}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.panel{
+  background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;
+  box-shadow:0 4px 16px rgba(168,60,102,.05);
+  transition:transform .2s,box-shadow .2s;
+}
+.panel:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.panel .tag{
+  display:inline-block;font-size:.74rem;letter-spacing:.1em;font-weight:700;
+  color:var(--rose-deep);background:var(--rose-pale);
+  padding:3px 10px;border-radius:6px;margin-bottom:14px;
+}
+.panel h3{font-size:1.1rem;margin-bottom:10px;line-height:1.45}
+.panel p{font-size:.93rem;color:var(--ink-soft)}
+.panel .more{display:inline-block;margin-top:16px;font-size:.88rem;font-weight:600}
+
+/* list */
+.feature-list{display:grid;gap:16px}
+.feature{
+  display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:center;
+  background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px;
+}
+.feature .num{
+  font-family:Georgia,serif;font-size:1.35rem;font-weight:700;color:#f0bfd0;
+  line-height:1;
+}
+.feature h3{font-size:1.02rem;margin-bottom:4px}
+.feature p{font-size:.9rem;color:var(--ink-soft)}
+.feature .pill{
+  font-size:.78rem;color:var(--rose-deep);background:var(--rose-pale);
+  padding:4px 12px;border-radius:999px;white-space:nowrap;font-weight:600;
+}
+
+/* about */
+.about{
+  background:linear-gradient(180deg,#fffaf7,#fdf1f5);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.about-inner{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+.about-inner h2{font-size:clamp(1.45rem,2.6vw,1.9rem);font-weight:800;line-height:1.35}
+.about-inner h2 span{color:var(--rose)}
+.about-body p{font-size:.98rem;color:var(--ink-soft);margin-bottom:16px}
+.about-body p:last-child{margin-bottom:0}
+.notes{list-style:none;display:grid;gap:12px;margin-top:8px}
+.notes li{position:relative;padding-left:22px;font-size:.94rem;color:var(--ink-soft)}
+.notes li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:9px;border-radius:50%;background:#f5c9d9;border:2px solid var(--rose)}
+
+/* download */
+.dl{
+  display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center;
+  background:#fff;border:1px solid var(--line);border-radius:22px;
+  padding:38px;box-shadow:var(--shadow);
+}
+.dl h2{font-size:1.6rem;margin-bottom:12px}
+.dl p{color:var(--ink-soft);font-size:.96rem}
+.dl .file{font-size:.84rem;color:var(--ink-soft);margin-top:10px}
+.btn-disabled{
+  display:inline-block;padding:12px 30px;border-radius:999px;font-weight:600;
+  background:#f0dbe4;color:#a98a97;border:1px dashed #e3c3d1;
+  pointer-events:none;cursor:default;
+}
+.dl-side{display:grid;gap:10px;font-size:.9rem;color:var(--ink-soft)}
+.dl-side div{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding-bottom:8px}
+
+/* footer */
+footer.site{background:#2b2028;color:#d9cbd2;padding:48px 0 28px;margin-top:0}
+footer .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;margin-bottom:34px}
+footer .flogo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;color:#fff;margin-bottom:14px}
+footer .flogo .mark{width:32px;height:32px}
+footer p{font-size:.88rem;line-height:1.8;color:#b9a7b0}
+footer h4{font-size:.9rem;color:#fff;margin-bottom:14px;letter-spacing:.06em}
+footer ul{list-style:none;display:grid;gap:9px;font-size:.88rem}
+footer a{color:#c9b3bd}
+footer a:hover{color:#fff;text-decoration:none}
+.fbottom{border-top:1px solid #43333c;padding-top:18px;font-size:.82rem;color:#9d8b94;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media(max-width:920px){
+  .hero-inner{grid-template-columns:1fr;padding:44px 0 50px;gap:34px}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .about-inner{grid-template-columns:1fr;gap:26px}
+  .dl{grid-template-columns:1fr;padding:28px}
+  footer .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  nav.main{display:none}
+  nav.main.open{display:block;position:absolute;left:0;right:0;top:100%;background:#fffaf7;border-bottom:1px solid var(--line);padding:16px 4vw}
+  nav.main.open ul{flex-direction:column;gap:14px}
+  .menu-toggle{display:inline-block}
+  .hbar{gap:12px}
+  .grid-3,.grid-2{grid-template-columns:1fr}
+  .feature{grid-template-columns:40px 1fr;gap:14px}
+  .feature .pill{grid-column:2}
+  section.block{padding:46px 0}
+  footer .fgrid{grid-template-columns:1fr}
+  .hero-facts{gap:20px}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap hbar">
+    <a class="logo" href="#top">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#fbe8ef"/>
+        <g fill="#d95c8a">
+          <circle cx="32" cy="18" r="8"/>
+          <circle cx="18" cy="32" r="8"/>
+          <circle cx="46" cy="32" r="8"/>
+          <circle cx="32" cy="46" r="8"/>
+        </g>
+        <circle cx="32" cy="32" r="6" fill="#fff3c4"/>
+      </svg>
+      桃花91
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainnav" onclick="var n=document.getElementById('mainnav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">目录</button>
+    <nav class="main" id="mainnav" aria-label="主导航">
+      <ul>
+        <li><a href="#hot">热门条目</a></li>
+        <li><a href="#list">内容榜单</a></li>
+        <li><a href="#about">关于本站</a></li>
+        <li><a href="#download">下载入口</a></li>
+        <li><a class="nav-cta" href="#hot">开始浏览</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow">桃花91 · 主题首页</span>
+        <h1>桃花91</h1>
+        <p class="lead">桃花91 是一个以热点内容浏览为核心的页面入口。这里把零散的热门条目按主题归类，用简洁的卡片与榜单呈现，让访客在一屏之内找到值得点开的内容，而不必在杂乱信息里反复翻找。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#hot">浏览热门内容</a>
+          <a class="btn btn-ghost" href="#list">查看内容榜单</a>
+        </div>
+        <div class="hero-facts">
+          <div class="fact"><b>4</b><span>内容分区</span></div>
+          <div class="fact"><b>12</b><span>精选条目</span></div>
+          <div class="fact"><b>每日</b><span>条目更新</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="card">
+          <h3>本期浏览提示</h3>
+          <ul>
+            <li><span class="dot"></span><span>热门条目按关注度排序，编号越小越靠前。</span></li>
+            <li><span class="dot"></span><span>每条内容只保留一段摘要，细节在条目内展开。</span></li>
+            <li><span class="dot"></span><span>桃花91 的分区互不重复，可按兴趣单独浏览。</span></li>
+            <li><span class="dot"></span><span>移动端目录按钮可展开，导航顺序与桌面一致。</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOT -->
+  <section class="block" id="hot">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>桃花91 热门条目</h2>
+        <p>从近期被反复打开的内容中挑出四个方向，每个方向对应一种常见的浏览目的，方便按需进入。</p>
+      </div>
+      <div class="grid-2">
+        <article class="panel">
+          <span class="tag">高关注</span>
+          <h3>热点合集：一页看全当日焦点</h3>
+          <p>把同一话题下的多条内容收进一个合集，按出现顺序排列。适合先了解发生了什么，再决定是否深入某一条。合集不堆砌重复素材，每条只留一句核心描述。</p>
+          <a class="more" href="#list">进入榜单 →</a>
+        </article>
+        <article class="panel">
+          <span class="tag">轻松浏览</span>
+          <h3>轻量条目：短摘要快速过目</h3>
+          <p>面向碎片时间，正文控制在几句话内，读完即知要点。桃花91 的轻量条目更强调可读性，不追求篇幅，也不把同一件事反复拆成多条。</p>
+          <a class="more" href="#list">查看条目 →</a>
+        </article>
+        <article class="panel">
+          <span class="tag">深度</span>
+          <h3>长文解读：把来龙去脉讲清楚</h3>
+          <p>适合愿意多花几分钟的访客。长文条目会补足背景、时间线与相关方的说法，帮助读者判断信息的分量，而不是只看到一个结论。</p>
+          <a class="more" href="#about">了解编排 →</a>
+        </article>
+        <article class="panel">
+          <span class="tag">回顾</span>
+          <h3>往期归档：按日期回溯内容</h3>
+          <p>归档区按日期整理旧条目，保留原始标题与摘要。想找回某天看过的内容时，从归档进入比重新搜索更快，也便于对比同一话题的前后变化。</p>
+          <a class="more" href="#list">翻阅归档 →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIST -->
+  <section class="block" id="list" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>内容榜单</h2>
+        <p>榜单按近期打开次数排列，编号固定，便于再次定位。每一行给出一条独立信息，不重复上方卡片的内容。</p>
+      </div>
+      <div class="feature-list">
+        <div class="feature">
+          <div class="num">01</div>
+          <div>
+            <h3>当日焦点汇总</h3>
+            <p>同一话题下的多条内容合并呈现，先看结论再看细节。</p>
+          </div>
+          <span class="pill">合集</span>
+        </div>
+        <div class="feature">
+          <div class="num">02</div>
+          <div>
+            <h3>热门条目速览</h3>
+            <p>用一段话说明条目要点，适合通勤路上快速过一遍。</p>
+          </div>
+          <span class="pill">速览</span>
+        </div>
+        <div class="feature">
+          <div class="num">03</div>
+          <div>
+            <h3>背景补充阅读</h3>
+            <p>补齐时间线与相关说法，帮助判断信息是否完整。</p>
+          </div>
+          <span class="pill">长文</span>
+        </div>
+        <div class="feature">
+          <div class="num">04</div>
+          <div>
+            <h3>往期内容归档</h3>
+            <p>按日期检索旧条目，保留原始标题与摘要，方便回溯。</p>
+          </div>
+          <span class="pill">归档</span>
+        </div>
+        <div class="feature">
+          <div class="num">05</div>
+          <div>
+            <h3>条目更新记录</h3>
+            <p>标注内容最近一次调整的时间，变化之处单独说明。</p>
+          </div>
+          <span class="pill">更新</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="block about" id="about">
+    <div class="wrap about-inner">
+      <div>
+        <h2>关于 <span>桃花91</span> 的内容编排</h2>
+        <ul class="notes">
+          <li>分区按浏览目的划分，而非按时间堆叠。</li>
+          <li>同一事实只在一处展开，其余位置做简短指向。</li>
+          <li>摘要与正文分离，先给结论再给细节。</li>
+          <li>不确定的信息标注来源，不写成确定结论。</li>
+        </ul>
+      </div>
+      <div class="about-body">
+        <p>桃花91 的首页不是信息流，而是一张内容地图。访客进入后通常带着一个具体问题：今天有什么值得看、某个话题的来龙去脉如何、或者想找回去看过的一条内容。页面按这三类需求拆成热门条目、内容榜单与归档入口，彼此之间用锚点连接，减少来回翻页。</p>
+        <p>在表达上，桃花91 尽量把话说短。每条内容先给一句话结论，再给必要的背景。对于仍在变化中的事件，页面只陈述已经确认的部分，并注明信息截止的时间，避免把推测写成事实。这样做的好处是读者不必读完长段文字才能判断内容是否与自己相关。</p>
+        <p>视觉上采用浅粉与米白的组合，配合圆角卡片和细边框，让密集的条目依然保持呼吸感。标题层级、卡片间距与正文行长在手机端会同步收窄，保证小屏阅读时不出现横向滚动，也不把文字挤成难以辨认的窄条。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="block" id="download">
+    <div class="wrap">
+      <div class="dl">
+        <div>
+          <h2>下载桃花91 内容清单</h2>
+          <p>清单收录当前榜单条目的标题与摘要，离线时也能翻阅。文件为纯文本格式，适合导入笔记工具或打印成纸质目录。</p>
+          <p class="file">格式：文本 · 内容：榜单条目摘要 · 更新：随页面同步</p>
+          <div style="margin-top:22px">
+            <a class="btn-disabled" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">下载</a>
+          </div>
+        </div>
+        <div class="dl-side">
+          <div><span>条目数量</span><span>5 条</span></div>
+          <div><span>包含分区</span><span>热门 / 榜单</span></div>
+          <div><span>文件大小</span><span>约 8 KB</span></div>
+          <div><span>更新方式</span><span>手动替换</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="flogo">
+          <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="#43333c"/>
+            <g fill="#e88aab">
+              <circle cx="32" cy="18" r="8"/>
+              <circle cx="18" cy="32" r="8"/>
+              <circle cx="46" cy="32" r="8"/>
+              <circle cx="32" cy="46" r="8"/>
+            </g>
+            <circle cx="32" cy="32" r="6" fill="#fff3c4"/>
+          </svg>
+          桃花91
+        </div>
+        <p>桃花91 以卡片与榜单组织热点内容，先给结论再给细节，帮助访客用较短时间判断内容是否值得细读。页面结构在桌面与手机端保持一致。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#hot">热门条目</a></li>
+          <li><a href="#list">内容榜单</a></li>
+          <li><a href="#about">关于本站</a></li>
+          <li><a href="#download">下载入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>内容分区</h4>
+        <ul>
+          <li><a href="#hot">热点合集</a></li>
+          <li><a href="#hot">轻量条目</a></li>
+          <li><a href="#list">往期归档</a></li>
+          <li><a href="#list">更新记录</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>桃花91 · 主题首页</span>
+      <span>内容以页面实际展示为准</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
