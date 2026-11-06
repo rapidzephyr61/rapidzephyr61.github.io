@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>金子同学漫画-金子同学漫画在线阅读_校园日常漫画人物故事</title>
+<meta name="description" content="金子同学漫画主题首页，汇集漫画人物设定、校园日常故事看点、章节阅读入口与读者关注点，帮助你快速了解金子同学漫画的看点和阅读路径。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5b93d'/%3E%3Cpath d='M18 20h28v6H18zM18 32h20v6H18zM18 44h26v6H18z' fill='%232b2b2b'/%3E%3Ccircle cx='48' cy='44' r='8' fill='%23e2604a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#25231f;
+  --ink-soft:#5d574e;
+  --paper:#fdf9f1;
+  --paper-2:#f6eee0;
+  --line:#e3d8c4;
+  --yellow:#f5b93d;
+  --red:#e2604a;
+  --teal:#3f7d78;
+  --radius:16px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;}
+img,svg{display:block;max-width:100%;}
+.wrap{width:min(1120px,calc(100% - 40px));margin:0 auto;}
+
+/* header */
+header.site{
+  position:sticky;top:0;z-index:30;
+  background:rgba(253,249,241,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.head-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:12px 0;flex-wrap:wrap;
+}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.logo-mark{width:42px;height:42px;flex:none;border-radius:12px;background:var(--yellow);display:grid;place-items:center;}
+.logo-text{font-size:1.18rem;font-weight:800;letter-spacing:.5px;}
+nav.main ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;flex-wrap:wrap;}
+nav.main a{
+  text-decoration:none;font-size:.95rem;font-weight:600;color:var(--ink-soft);
+  padding:4px 2px;border-bottom:2px solid transparent;transition:.2s;
+}
+nav.main a:hover,nav.main a:focus-visible{color:var(--ink);border-color:var(--yellow);}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--ink);color:#fff;text-decoration:none;
+  font-weight:700;font-size:.94rem;padding:10px 20px;border-radius:999px;
+  border:2px solid var(--ink);transition:.2s;
+}
+.btn:hover{background:var(--red);border-color:var(--red);}
+.btn.ghost{background:transparent;color:var(--ink);}
+.btn.ghost:hover{background:var(--yellow);border-color:var(--yellow);color:var(--ink);}
+
+/* hero */
+.hero{padding:56px 0 40px;position:relative;overflow:hidden;}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.82rem;font-weight:700;letter-spacing:1.5px;
+  color:var(--teal);background:#e6f0ee;padding:6px 14px;border-radius:999px;
+}
+h1{
+  font-size:clamp(2rem,4.6vw,3.1rem);
+  line-height:1.22;margin:18px 0 16px;font-weight:800;letter-spacing:-.5px;
+}
+h1 .hl{
+  background:linear-gradient(transparent 62%,var(--yellow) 62%);
+  padding:0 2px;
+}
+.lede{font-size:1.06rem;color:var(--ink-soft);max-width:34em;margin:0 0 26px;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.hero-art{
+  background:var(--paper-2);border:1px solid var(--line);
+  border-radius:24px;padding:22px;position:relative;
+}
+.hero-art .cap{
+  font-size:.8rem;color:var(--ink-soft);margin-top:12px;text-align:center;
+}
+.stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px;
+}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;}
+.stat b{display:block;font-size:1.35rem;color:var(--red);line-height:1.3;}
+.stat span{font-size:.82rem;color:var(--ink-soft);}
+
+/* section base */
+section{padding:44px 0;}
+.sec-head{margin-bottom:26px;}
+.sec-head .tag{
+  font-size:.8rem;font-weight:700;letter-spacing:2px;color:var(--teal);text-transform:uppercase;
+}
+h2{font-size:clamp(1.4rem,2.6vw,1.85rem);margin:6px 0 8px;font-weight:800;letter-spacing:-.3px;}
+.sec-head p{margin:0;color:var(--ink-soft);max-width:44em;}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;display:flex;flex-direction:column;gap:10px;
+  transition:transform .2s,box-shadow .2s;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px -18px rgba(37,35,31,.45);}
+.card .ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--paper-2);}
+.card h3{margin:0;font-size:1.06rem;font-weight:800;}
+.card p{margin:0;font-size:.93rem;color:var(--ink-soft);}
+
+/* story list */
+.story{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.story-item{
+  border:1px solid var(--line);border-radius:var(--radius);background:#fff;
+  padding:22px 24px;display:flex;gap:18px;
+}
+.story-item .num{
+  font-size:1.5rem;font-weight:800;color:var(--yellow);line-height:1;flex:none;
+  font-family:Georgia,"Times New Roman",serif;
+}
+.story-item h3{margin:0 0 6px;font-size:1.05rem;font-weight:800;}
+.story-item p{margin:0;font-size:.92rem;color:var(--ink-soft);}
+
+/* reading panel */
+.panel{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:24px;
+  padding:32px;display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:start;
+}
+.panel h2{margin-top:0;}
+.check{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:12px;}
+.check li{display:flex;gap:10px;font-size:.94rem;color:var(--ink-soft);}
+.check svg{flex:none;margin-top:4px;}
+.reader-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;}
+.reader-box h3{margin:0 0 6px;font-size:1rem;font-weight:800;}
+.reader-box p{margin:0 0 16px;font-size:.9rem;color:var(--ink-soft);}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;}
+.chip{
+  font-size:.82rem;padding:5px 12px;border-radius:999px;
+  background:var(--paper-2);border:1px solid var(--line);color:var(--ink-soft);
+}
+.dl-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+.dl-btn{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+  background:var(--teal);color:#fff;font-weight:700;font-size:.94rem;
+  padding:10px 22px;border-radius:999px;pointer-events:none;opacity:.92;
+}
+.dl-note{font-size:.82rem;color:var(--ink-soft);}
+
+/* faq */
+.faq{display:grid;gap:14px;}
+details{
+  background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px;
+}
+details[open]{border-color:var(--yellow);}
+summary{cursor:pointer;font-weight:700;font-size:.98rem;list-style:none;}
+summary::-webkit-details-marker{display:none;}
+summary::before{content:"＋";color:var(--red);font-weight:800;margin-right:10px;}
+details[open] summary::before{content:"－";}
+details p{margin:10px 0 0;font-size:.92rem;color:var(--ink-soft);}
+
+/* footer */
+footer.site{
+  margin-top:20px;background:var(--ink);color:#d9d2c5;padding:38px 0 26px;
+}
+.foot-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start;}
+.foot-brand{font-weight:800;font-size:1.05rem;color:#fff;display:flex;align-items:center;gap:10px;}
+.foot-brand .logo-mark{width:34px;height:34px;border-radius:9px;}
+footer p{font-size:.86rem;margin:12px 0 0;max-width:36em;color:#a9a294;}
+.foot-nav{display:flex;gap:26px;flex-wrap:wrap;}
+.foot-nav a{color:#d9d2c5;text-decoration:none;font-size:.9rem;}
+.foot-nav a:hover{color:var(--yellow);}
+.copy{border-top:1px solid #3c3831;margin-top:26px;padding-top:16px;font-size:.8rem;color:#8e887b;}
+
+@media (max-width:900px){
+  .hero-grid,.panel{grid-template-columns:1fr;}
+  .cards{grid-template-columns:1fr 1fr;}
+  .hero-art{order:-1;}
+}
+@media (max-width:640px){
+  .wrap{width:calc(100% - 28px);}
+  .head-inner{padding:10px 0;}
+  .logo-text{font-size:1rem;}
+  nav.main ul{gap:16px;}
+  nav.main a{font-size:.88rem;}
+  .hero{padding:34px 0 24px;}
+  .lede{font-size:1rem;}
+  .cards,.story{grid-template-columns:1fr;}
+  .stats{grid-template-columns:1fr 1fr 1fr;gap:8px;}
+  .stat{padding:10px 12px;}
+  .stat b{font-size:1.1rem;}
+  section{padding:32px 0;}
+  .panel{padding:22px;}
+  .story-item{padding:18px;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap head-inner">
+    <a class="logo" href="#top" aria-label="金子同学漫画 首页">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="4" width="18" height="4" rx="1" fill="#25231f"/>
+          <rect x="3" y="10" width="13" height="4" rx="1" fill="#25231f"/>
+          <rect x="3" y="16" width="16" height="4" rx="1" fill="#25231f"/>
+        </svg>
+      </span>
+      <span class="logo-text">金子同学漫画</span>
+    </a>
+    <nav class="main" aria-label="主导航">
+      <ul>
+        <li><a href="#story">故事看点</a></li>
+        <li><a href="#cast">人物设定</a></li>
+        <li><a href="#read">阅读入口</a></li>
+        <li><a href="#faq">常见问答</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="#read">开始阅读</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">校园日常 · 轻喜剧</span>
+        <h1><span class="hl">金子同学漫画</span></h1>
+        <p class="lede">金子同学漫画以校园日常为舞台，用轻松的分镜讲一段段同学之间的相处故事。这里整理了人物关系、故事看点与阅读入口，方便你先判断口味，再决定从哪一章读起。</p>
+        <div class="hero-actions">
+          <a class="btn" href="#read">进入阅读入口</a>
+          <a class="btn ghost" href="#story">先看故事看点</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>校园</b><span>日常题材</span></div>
+          <div class="stat"><b>轻喜剧</b><span>阅读基调</span></div>
+          <div class="stat"><b>单页</b><span>主题首页</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <svg viewBox="0 0 320 260" role="img" aria-label="金子同学漫画校园场景插画">
+          <rect x="0" y="0" width="320" height="260" rx="18" fill="#fdf9f1"/>
+          <rect x="24" y="30" width="120" height="96" rx="8" fill="#f5b93d"/>
+          <path d="M24 30h120v20H24z" fill="#e2604a"/>
+          <circle cx="58" cy="96" r="12" fill="#fdf9f1"/>
+          <circle cx="100" cy="96" r="12" fill="#fdf9f1"/>
+          <rect x="164" y="30" width="132" height="60" rx="8" fill="#e6f0ee"/>
+          <rect x="176" y="46" width="86" height="8" rx="4" fill="#3f7d78"/>
+          <rect x="176" y="62" width="60" height="8" rx="4" fill="#3f7d78" opacity=".55"/>
+          <rect x="24" y="146" width="272" height="12" rx="6" fill="#e3d8c4"/>
+          <rect x="44" y="170" width="90" height="60" rx="8" fill="#fff" stroke="#e3d8c4"/>
+          <rect x="56" y="182" width="66" height="7" rx="3.5" fill="#25231f" opacity=".8"/>
+          <rect x="56" y="196" width="48" height="7" rx="3.5" fill="#25231f" opacity=".4"/>
+          <rect x="56" y="210" width="56" height="7" rx="3.5" fill="#25231f" opacity=".4"/>
+          <circle cx="220" cy="196" r="34" fill="#f5b93d"/>
+          <path d="M206 190h28v6h-28zM206 202h20v6h-20z" fill="#25231f"/>
+        </svg>
+        <p class="cap">教室、走廊与课间，是金子同学漫画最常出现的场景</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">Story</span>
+        <h2>金子同学漫画的故事看点</h2>
+        <p>金子同学漫画不靠强冲突推进，而是把日常里的小摩擦、小默契放大成笑点。下面四个方向，是读者最常讨论的部分。</p>
+      </div>
+      <div class="story">
+        <div class="story-item">
+          <span class="num">01</span>
+          <div>
+            <h3>课间与放学后的日常</h3>
+            <p>金子同学漫画把大量篇幅放在课堂之外的碎片时间：借笔记、抢座位、放学路上绕远路。这些场景不制造大事件，却让角色关系一点点变近。</p>
+          </div>
+        </div>
+        <div class="story-item">
+          <span class="num">02</span>
+          <div>
+            <h3>误会与和解的节奏</h3>
+            <p>一次没传到的口信、一句说重的话，往往在下一话就被解开。金子同学漫画处理冲突的方式偏温和，读者不用背负太长的情绪压力。</p>
+          </div>
+        </div>
+        <div class="story-item">
+          <span class="num">03</span>
+          <div>
+            <h3>群像之间的互相衬托</h3>
+            <p>主角之外的同学各有小习惯，有人爱较真，有人总迟到。金子同学漫画用配角反应来衬托主角的选择，读起来更像一个班集体的切片。</p>
+          </div>
+        </div>
+        <div class="story-item">
+          <span class="num">04</span>
+          <div>
+            <h3>画风与分镜的轻快感</h3>
+            <p>线条干净、网点克制，格子大小随情绪变化。金子同学漫画在安静处留白，在热闹处压密，翻页节奏因此比较顺。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cast">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">Cast</span>
+        <h2>人物设定与关系线索</h2>
+        <p>阅读金子同学漫画前先认人，能省下不少来回翻页的功夫。以下按角色在故事中的位置归类。</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <span class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" fill="#e2604a"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="#e2604a" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <h3>金子同学</h3>
+          <p>金子同学漫画的同名主角，思路快、行动慢，常在帮忙与闯祸之间反复横跳。她的选择往往决定一话的走向。</p>
+        </div>
+        <div class="card">
+          <span class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="4" stroke="#3f7d78" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#3f7d78" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <h3>同桌与前后排</h3>
+          <p>同桌负责吐槽，前排负责递纸条。金子同学漫画里最密集的对话都发生在这一小圈人之间，笑点也多由他们接力完成。</p>
+        </div>
+        <div class="card">
+          <span class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 19V9l8-5 8 5v10" stroke="#f5b93d" stroke-width="2" stroke-linejoin="round"/><path d="M9 19v-6h6v6" stroke="#f5b93d" stroke-width="2" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>老师与班级环境</h3>
+          <p>老师出场不多，但每次出现都会改变节奏。金子同学漫画借办公室、走廊这些地点，把校规变成情节的推力。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="read">
+    <div class="wrap">
+      <div class="panel">
+        <div>
+          <span class="tag" style="font-size:.8rem;font-weight:700;letter-spacing:2px;color:var(--teal);">Read</span>
+          <h2>从哪里开始读金子同学漫画</h2>
+          <p style="color:var(--ink-soft);margin:0;">如果是第一次接触，建议按连载顺序读前三话，先把人物关系理顺；已经追过一段的读者，可以直接跳到最近更新，回看错过的支线。</p>
+          <ul class="check">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" stroke="#3f7d78" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              按话数顺序阅读，人物动机最容易跟上
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" stroke="#3f7d78" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              单话篇幅短，适合课间或通勤时读一段
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" stroke="#3f7d78" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              回看时留意配角的小动作，常有前后呼应的细节
+            </li>
+          </ul>
+        </div>
+        <div class="reader-box">
+          <h3>阅读方式</h3>
+          <p>金子同学漫画适合竖屏逐格阅读，也可以离线保存后慢慢看。</p>
+          <div class="chips">
+            <span class="chip">校园日常</span>
+            <span class="chip">轻喜剧</span>
+            <span class="chip">群像</span>
+            <span class="chip">短篇节奏</span>
+          </div>
+          <div class="dl-row">
+            <a class="dl-btn" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m0 0l-3-3m3 3l3-3M3 13h10" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              下载
+            </a>
+            <span class="dl-note">离线阅读包，后续开放替换</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">FAQ</span>
+        <h2>读者常问的几个问题</h2>
+        <p>关于金子同学漫画的题材、阅读顺序与篇幅，这里集中回应。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>金子同学漫画是什么类型的作品？</summary>
+          <p>属于校园日常题材，以轻喜剧基调展开，单话篇幅较短，主要靠角色互动和细节笑点推进，不依赖连续的大悬念。</p>
+        </details>
+        <details>
+          <summary>没看过前面的章节能直接读吗？</summary>
+          <p>大部分单话可以独立理解，但人物关系和部分笑点有前后铺垫。建议至少先读前三话，再按兴趣跳读。</p>
+        </details>
+        <details>
+          <summary>金子同学漫画适合什么时间读？</summary>
+          <p>因为每话节奏轻、信息量不大，适合课间、通勤这类碎片时间。连续读多话也不会造成太重的情绪负担。</p>
+        </details>
+        <details>
+          <summary>页面上的下载按钮现在能用吗？</summary>
+          <p>下载入口目前为占位状态，按钮已标注为不可用，待离线阅读包准备好后再替换为真实地址。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <rect x="3" y="4" width="18" height="4" rx="1" fill="#25231f"/>
+              <rect x="3" y="10" width="13" height="4" rx="1" fill="#25231f"/>
+              <rect x="3" y="16" width="16" height="4" rx="1" fill="#25231f"/>
+            </svg>
+          </span>
+          金子同学漫画
+        </div>
+        <p>金子同学漫画主题首页，整理故事看点、人物设定与阅读入口，帮助读者先了解内容，再决定从哪一话开始。</p>
+      </div>
+      <nav class="foot-nav" aria-label="页尾导航">
+        <a href="#story">故事看点</a>
+        <a href="#cast">人物设定</a>
+        <a href="#read">阅读入口</a>
+        <a href="#faq">常见问答</a>
+      </nav>
+    </div>
+    <div class="copy">© 金子同学漫画 主题首页 · 内容以作品实际连载为准</div>
+  </div>
+</footer>
+
+</body>
+</html>
